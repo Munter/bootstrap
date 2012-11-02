@@ -71,7 +71,7 @@ table {
   border-collapse: separate; // Done so we can round those corners!
   *border-collapse: collapse; // IE7 can't round corners anyway
   border-left: 0;
-  .border-radius(@baseBorderRadius);
+  border-radius: @baseBorderRadius;
   th,
   td {
     border-left: 1px solid @tableBorder;
@@ -101,7 +101,7 @@ table {
   thead:last-child tr:last-child th:first-child,
   tbody:last-child tr:last-child td:first-child,
   tfoot:last-child tr:last-child td:first-child {
-    .border-radius(0 0 0 4px);
+    border-radius: 0 0 0 4px;
     border-bottom-left-radius: 4px;
   }
   thead:last-child tr:last-child th:last-child,
